@@ -1,23 +1,28 @@
-const router = require('express').Router();
+const router = require("express").Router();
 const {
-  getAllUsers,
-  getUsersById,
-  createUsers,
-  updateUsers,
-  deleteUsers
-} = require('../../controllers/pizza-controller');
+  getAllThought,
+  getThoughtById,
+  createThought,
+  updateThought,
+  deleteThought,
+  addReaction,
+  removeReaction,
+} = require("../../controllers/thought-controller");
 
-// /api/pizzas
-router
-  .route('/')
-  .get(getAllPizza)
-  .post(createPizza);
+// /api/thoughts
+router.route("/").get(getAllThought).post(createThought);
 
-// /api/pizzas/:id
+// /api/thoughts/:id
 router
-  .route('/:id')
-  .get(getPizzaById)
-  .put(updatePizza)
-  .delete(deletePizza);
+  .route("/:id")
+  .get(getThoughtById)
+  .put(updateThought)
+  .delete(deleteThought);
+
+// /api/thoughts/:thoughtId/reactions
+router.route("/:thoughtId/reactions").post(addReaction);
+
+// /api/thoughts/:thoughtId/reactions/:reactionId
+router.route("/:thoughtId/reactions/:reactionId").delete(removeReaction);
 
 module.exports = router;

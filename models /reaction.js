@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const dateFormat = require('../utils/dateFormat');
 
 const ReactionSchema = new Schema(
     {
@@ -21,7 +22,7 @@ const ReactionSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now, 
-            get: createdAtVal => dateformat(createdAtVal)
+            get: createdAtVal => dateFormat(createdAtVal)
         },
     },
 
@@ -34,5 +35,6 @@ const ReactionSchema = new Schema(
     }
 );
 
+const Reaction = model('Reaction', ReactionSchema);
 // export api model 
-module.exports = ReactionSchema;
+module.exports = Reaction;
