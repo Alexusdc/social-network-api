@@ -1,3 +1,4 @@
-const api = require('./user');
+const Users = require('./user');
+const Thoughts = require('./thought');
 
-module.exports = { api };
+module.exports = { Users, Thoughts };
