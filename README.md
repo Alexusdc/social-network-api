@@ -15,9 +15,11 @@
   4. Open Insomnia to run the api routes
 
   ## Walkthrough videos 
-  [User routes] (https://drive.google.com/file/d/18PH-0N3cabp3jbarnNr9r6RuBZRcahBo/view)
+  User routes - 
+  https://drive.google.com/file/d/18PH-0N3cabp3jbarnNr9r6RuBZRcahBo/view)
 
-  Thought routes (https://drive.google.com/file/d/1npqJYA4BHhvnXZbkNtZzEP-M79cAqQHF/view)
+  Thought routes - 
+  (https://drive.google.com/file/d/1npqJYA4BHhvnXZbkNtZzEP-M79cAqQHF/view)
 
   ## Github Username 
   Alexusdc
